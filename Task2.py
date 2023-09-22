@@ -8,11 +8,11 @@ def calculate(operation):
     num2 = float(entry_num2.get())
 
     if operation == "+":
-        result.set(f"Result: {num1+num2:.2f}")
+        result.set(f"Result:{num1+num2:.2f}")
     elif operation == "-":
-        result.set(f"Result: {num1-num2:.2f}")
+        result.set(f"Result:{num1-num2:.2f}")
     elif operation == "*":
-        result.set(f"Result: {num1*num2:.2f}")
+        result.set(f"Result:{num1*num2:.2f}")
     elif operation == "/":
         if num2 == 0:
             result.set("Error:Division byzero")
