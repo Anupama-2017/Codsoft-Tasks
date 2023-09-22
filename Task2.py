@@ -8,16 +8,16 @@ def calculate(operation):
     num2 = float(entry_num2.get())
 
     if operation == "+":
-        result.set(f"Result: {num1 + num2:.2f}")
+        result.set(f"Result: {num1+num2:.2f}")
     elif operation == "-":
-        result.set(f"Result: {num1 - num2:.2f}")
+        result.set(f"Result: {num1-num2:.2f}")
     elif operation == "*":
-        result.set(f"Result: {num1 * num2:.2f}")
+        result.set(f"Result: {num1*num2:.2f}")
     elif operation == "/":
         if num2 == 0:
-            result.set("Error: Division by zero")
+            result.set("Error:Division byzero")
         else:
-            result.set(f"Result: {num1 / num2:.2f}")
+            result.set(f"Result{num1num2:.2f}")
 root = tk.Tk()
 root.title("Simple Calc")
 root.geometry("400x200")
@@ -43,8 +43,8 @@ add_button.pack(side="left",padx=5,pady=5)
 multiply_button.pack(side="left",padx=5,pady=5)
 divide_button.pack(side="left",padx=5,pady=5)
 result = tk.StringVar()
-result_label = tk.Label(root, textvariable=result, font=("Helvetica", 14),bg="grey")
+result_label = tk.Label(root, textvariable=result,font=("Helvetica",14),bg="grey")
 result_label.pack()
-clear_button = tk.Button(root,text="Clear",command=clear_entries)
+clear_button=tk.Button(root,text="Clear",command=clear_entries)
 clear_button.pack()
 root.mainloop()
